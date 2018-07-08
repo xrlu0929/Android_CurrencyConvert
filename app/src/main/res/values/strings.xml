@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">currencyConvert</string>
+    <string name="https_www_airtreks_com_go_foreign_currency">https://www.airtreks.com/go/foreign-currency/</string>
+</resources>
