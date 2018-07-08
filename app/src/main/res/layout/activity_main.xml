@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    app:layout_constrainedHeight="false"
     tools:context=".MainActivity"
     tools:layout_editor_absoluteY="81dp">
 
@@ -46,9 +47,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="175dp"
+        android:id="@+id/header"
+        android:layout_width="480dp"
+        android:layout_height="172dp"
+        android:layout_margin="0dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginRight="-10dp"
+        android:layout_marginStart="-10dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:padding="0dp"
+        android:scaleType="matrix"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -63,7 +73,7 @@
         android:layout_marginTop="52dp"
         android:text="US $"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/header" />
 
     <EditText
         android:id="@+id/editText"
@@ -75,8 +85,8 @@
         android:layout_marginStart="38dp"
         android:layout_marginTop="212dp"
         android:ems="10"
+        android:hint="US $ amount"
         android:inputType="number|numberDecimal"
-        android:text="US $"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/dollar"
