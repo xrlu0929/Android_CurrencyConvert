@@ -2,7 +2,6 @@ package com.example.annaxlu.currencyconvert;
 
 import com.google.gson.annotations.SerializedName;
 
-import retrofit2.Retrofit;
 
 public class RetroFixData {
     /**
@@ -23,7 +22,7 @@ public class RetroFixData {
     @SerializedName("rates")
     private Object rate;
 
-    public RetroFixData(boolean success, String timestamp, String base, String date,  Object rate) {
+    public RetroFixData(boolean success, String timestamp, String base, String date, Object rate) {
         this.success=success;
         this.timestamp = timestamp;
         this.base = base;
@@ -67,12 +66,12 @@ public class RetroFixData {
         this.date = date;
     }
 
-    public  Object getRate() {
+    public Object getRate() {
 
         return rate;
     }
 
-    public void setRate( Object rate) {
+    public void setRate(Object rate) {
         this.rate = rate;
     }
 }
